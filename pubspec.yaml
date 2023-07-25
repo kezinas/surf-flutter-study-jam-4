@@ -17,6 +17,7 @@ dependencies:
   http: ^0.13.5
   shake: ^2.2.0
   get: ^4.6.5
+  flutter_svg: ^2.0.7
 
 dev_dependencies:
   flutter_test:
@@ -28,4 +29,6 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/background.jpg
-    - assets/images/stars.jpg
+    - assets/images/star.svg
+    - assets/images/small star.svg
+    - assets/images/ball_sc.jpg

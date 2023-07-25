@@ -11,7 +11,7 @@ class AHelper {
       final result = jsonDecode(response.body);
       return result['reading'];
     } catch (error) {
-      return '$error';
+      throw Error();
     }
   }
 }
