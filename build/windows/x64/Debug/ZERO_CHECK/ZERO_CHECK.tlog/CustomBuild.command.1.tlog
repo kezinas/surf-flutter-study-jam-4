@@ -1,0 +1,10 @@
+^C:\PROJECTS_FL\SURF-FLUTTER-STUDY-JAM-4\BUILD\WINDOWS\CMAKEFILES\AF31A31DFA8CB9E83635983028C75267\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/projects_fl/surf-flutter-study-jam-4/windows -BC:/projects_fl/surf-flutter-study-jam-4/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/projects_fl/surf-flutter-study-jam-4/build/windows/surf_practice_magic_ball.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

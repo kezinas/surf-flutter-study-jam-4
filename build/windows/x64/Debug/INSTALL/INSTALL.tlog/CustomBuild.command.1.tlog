@@ -1,0 +1,10 @@
+^C:\PROJECTS_FL\SURF-FLUTTER-STUDY-JAM-4\BUILD\WINDOWS\CMAKEFILES\AF31A31DFA8CB9E83635983028C75267\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

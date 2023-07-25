@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\projects_fl\surf-flutter-study-jam-4\build\windows\CMakeFiles\879b0a28b69d9f8bf7a051a0e920dbd6\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{15BAE84F-02B4-3A5E-8CDF-2DEC61459371}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

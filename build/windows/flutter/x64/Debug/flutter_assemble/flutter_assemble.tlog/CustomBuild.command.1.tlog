@@ -1,0 +1,28 @@
+^C:\PROJECTS_FL\SURF-FLUTTER-STUDY-JAM-4\BUILD\WINDOWS\CMAKEFILES\594D90433F8FB913034C2B36C65A7962\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter PROJECT_DIR=C:\projects_fl\surf-flutter-study-jam-4 FLUTTER_ROOT=C:\flutter FLUTTER_EPHEMERAL_DIR=C:\projects_fl\surf-flutter-study-jam-4\windows\flutter\ephemeral PROJECT_DIR=C:\projects_fl\surf-flutter-study-jam-4 FLUTTER_TARGET=C:\projects_fl\surf-flutter-study-jam-4\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9jZGJlZGE3ODhhMjkzZmEyOTY2NWRjM2ZhM2Q2ZTYzYmQyMjFjYjBkLw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\projects_fl\surf-flutter-study-jam-4\.dart_tool\package_config.json C:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROJECTS_FL\SURF-FLUTTER-STUDY-JAM-4\BUILD\WINDOWS\CMAKEFILES\1B212A7650CB110280570C5A812423DD\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROJECTS_FL\SURF-FLUTTER-STUDY-JAM-4\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/projects_fl/surf-flutter-study-jam-4/windows -BC:/projects_fl/surf-flutter-study-jam-4/build/windows --check-stamp-file C:/projects_fl/surf-flutter-study-jam-4/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

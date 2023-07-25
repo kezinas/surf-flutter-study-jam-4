@@ -1,0 +1,12 @@
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/data/icudtl.dat
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/flutter_windows.dll
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/data/flutter_assets/AssetManifest.bin
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/data/flutter_assets/assets/images/background.jpg
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/data/flutter_assets/assets/images/stars.jpg
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+C:/projects_fl/surf-flutter-study-jam-4/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag

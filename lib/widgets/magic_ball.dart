@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shake/shake.dart';
+import 'package:get/get.dart';
 import 'package:surf_practice_magic_ball/data/ans_helper.dart';
 
 class MagicBall extends StatefulWidget {
@@ -16,12 +17,14 @@ class _MagicBallState extends State<MagicBall> {
   @override
   void initState() {
     super.initState();
-    ShakeDetector.autoStart(
-        shakeThresholdGravity: 1.5,
-        onPhoneShake: () async {
-          answer = await helper.getAnswer();
-          setState(() {});
-        });
+    if (!(GetPlatform.isDesktop || GetPlatform.isWeb)) {
+      ShakeDetector.autoStart(
+          shakeThresholdGravity: 1.5,
+          onPhoneShake: () async {
+            answer = await helper.getAnswer();
+            setState(() {});
+          });
+    }
   }
 
   @override
