@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:surf_practice_magic_ball/widgets/magic_ball.dart';
 import 'package:get/get.dart';
+import 'package:surf_practice_magic_ball/generated/l10n.dart';
 
 // ignore: must_be_immutable
 class MagicBallScreen extends StatelessWidget {
@@ -8,8 +9,9 @@ class MagicBallScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final delegate = S.of(context);
     final String hintText =
-        'Нажмите на шар${GetPlatform.isDesktop || GetPlatform.isWeb ? '' : (' или потрясите ${MediaQuery.of(context).size.shortestSide < 550 ? 'телефон' : 'планшет'}')}';
+        '${delegate.click}${GetPlatform.isDesktop || GetPlatform.isWeb ? '' : (' ${delegate.shake} ${MediaQuery.of(context).size.shortestSide < 550 ? '${delegate.phone}' : '${delegate.tablet}'}')}';
     return Scaffold(
         body: Container(
       padding: const EdgeInsets.only(top: 200),

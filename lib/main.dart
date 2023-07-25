@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'generated/l10n.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:surf_practice_magic_ball/screen/magic_ball_screen.dart';
 
 void main() async {
@@ -19,6 +21,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      localizationsDelegates: const [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      supportedLocales: S.delegate.supportedLocales,
       home: MagicBallScreen(),
     );
   }
