@@ -25,7 +25,13 @@ class _MagicBallState extends State<MagicBall> {
           shakeThresholdGravity: 1.5,
           onPhoneShake: () async {
             onTapped = true;
-            answer = await helper.getAnswer();
+            hasError = false;
+            try {
+              answer = await helper.getAnswer();
+            } catch (e) {
+              hasError = true;
+              answer = '';
+            }
             setState(() {});
           });
     }
@@ -44,7 +50,6 @@ class _MagicBallState extends State<MagicBall> {
           hasError = true;
           answer = '';
         }
-
         setState(() {});
       },
       child: Stack(
