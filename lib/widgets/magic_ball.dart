@@ -60,71 +60,84 @@ class _MagicBallState extends State<MagicBall>
         duration: Duration(seconds: 3),
         tween: Tween(begin: 10.0, end: 0.0),
         builder: (BuildContext context, value, _) {
-          return Stack(
-            alignment: AlignmentDirectional.center,
-            textDirection: TextDirection.ltr,
+          return Column(
             children: [
-              Container(
-                width: 300,
-                height: 300,
-                margin: EdgeInsets.only(bottom: 40.0 - value, top: value),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(300),
-                  border: Border.all(),
-                  image: DecorationImage(
-                    image: AssetImage('assets/images/ball_sc.jpg'),
-                    fit: BoxFit.fitHeight,
+              Stack(
+                alignment: AlignmentDirectional.center,
+                textDirection: TextDirection.ltr,
+                children: [
+                  Container(
+                    width: 300,
+                    height: 300,
+                    margin: EdgeInsets.only(bottom: 40.0 - value, top: value),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(300),
+                      border: Border.all(),
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/ball_sc.jpg'),
+                        fit: BoxFit.fitHeight,
+                      ),
+                    ),
                   ),
-                ),
+                  Container(
+                    width: 300,
+                    height: 300,
+                    margin: EdgeInsets.only(bottom: 40.0 - value, top: value),
+                    padding: EdgeInsets.all(30),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(300),
+                    ),
+                    child: Center(
+                        child: SvgPicture.asset('assets/images/star.svg')),
+                  ),
+                  Container(
+                    width: 300,
+                    height: 300,
+                    margin: EdgeInsets.only(bottom: 40.0 - value, top: value),
+                    padding: EdgeInsets.all(30),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(300),
+                    ),
+                    child: Center(
+                        child: SvgPicture.asset(
+                      'assets/images/small star.svg',
+                    )),
+                  ),
+                  onTapped
+                      ? Container(
+                          width: 300,
+                          height: 300,
+                          margin:
+                              EdgeInsets.only(bottom: 40.0 - value, top: value),
+                          padding: EdgeInsets.all(30),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(300),
+                              color: hasError
+                                  ? Color.fromARGB(135, 250, 3, 3)
+                                  : Color.fromARGB(136, 0, 0, 0)),
+                        )
+                      : Container(),
+                  Container(
+                    width: 300,
+                    height: 300,
+                    margin: EdgeInsets.only(bottom: 40.0 - value, top: value),
+                    padding: EdgeInsets.all(30),
+                    alignment: Alignment.center,
+                    child: Text(
+                      answer,
+                      style: TextStyle(color: Colors.white, fontSize: 22),
+                    ),
+                  ),
+                ],
               ),
               Container(
-                width: 300,
-                height: 300,
-                margin: EdgeInsets.only(bottom: 40.0 - value, top: value),
-                padding: EdgeInsets.all(30),
+                width: 100 - value * 2,
+                height: 30,
+                margin: EdgeInsets.only(bottom: 10),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(300),
-                ),
-                child:
-                    Center(child: SvgPicture.asset('assets/images/star.svg')),
-              ),
-              Container(
-                width: 300,
-                height: 300,
-                margin: EdgeInsets.only(bottom: 40.0 - value, top: value),
-                padding: EdgeInsets.all(30),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(300),
-                ),
-                child: Center(
-                    child: SvgPicture.asset(
-                  'assets/images/small star.svg',
-                )),
-              ),
-              onTapped
-                  ? Container(
-                      width: 300,
-                      height: 300,
-                      margin: EdgeInsets.only(bottom: 40.0 - value, top: value),
-                      padding: EdgeInsets.all(30),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(300),
-                          color: hasError
-                              ? Color.fromARGB(135, 250, 3, 3)
-                              : Color.fromARGB(136, 0, 0, 0)),
-                    )
-                  : Container(),
-              Container(
-                width: 300,
-                height: 300,
-                margin: EdgeInsets.only(bottom: 40.0 - value, top: value),
-                padding: EdgeInsets.all(30),
-                alignment: Alignment.center,
-                child: Text(
-                  answer,
-                  style: TextStyle(color: Colors.white, fontSize: 22),
-                ),
-              ),
+                    color: Color.fromARGB(255, 74, 4, 83),
+                    borderRadius: BorderRadius.all(Radius.elliptical(100, 50))),
+              )
             ],
           );
         },
